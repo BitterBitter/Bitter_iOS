@@ -9,10 +9,8 @@ import Foundation
 import HandyJSON
 
 class SignIn: HandyJSON {
-    var timestamp: Date?
     var status: Int?
     var error: String?
     var message: String?
-    var path: String?
     required init() {}
 }

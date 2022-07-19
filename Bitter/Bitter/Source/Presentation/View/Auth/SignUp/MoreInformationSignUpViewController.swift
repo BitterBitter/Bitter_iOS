@@ -19,15 +19,28 @@ final class MoreInformationSignUpViewController: baseVC {
     var username: String?
     var password: String?
     
+    
+    
     // MARK: - Method
     @IBAction func tapBackButton(_ sender: UIButton) {
       self.navigationController?.popViewController(animated: true)
     }
     @IBAction func tapDoneButton(_ sender: UIButton) {
-        morSignupNetworking()
-        self.navigationController?.popToRootViewController(animated: true)
+        
+        let name = nameTextField.text!
+        let age = ageTextField.text!
+        let gender = genderTextField.text!
+        let height = heightTextField.text!
+        let weight = weightTextField.text!
+        
+        let memberDbManager = MemberDbManager()
+        memberDbManager.addMemberInfo(username: username!, password: password!, name: name, age: age, gender: gender, height: height, weight: weight)
+        
+//        morSignupNetworking()
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "signin") as? SignInViewController
+        self.navigationController?.pushViewController(vc ?? SignInViewController(), animated: true)
     }
-    
     
     
 }

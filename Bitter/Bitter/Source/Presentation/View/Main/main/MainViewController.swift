@@ -9,15 +9,34 @@ import UIKit
 
 final class MainViewController: baseVC {
     
-    @IBOutlet weak var mainTableView: UITableView!
+    let memberDbManager = MemberDbManager()
+    var member: Member = Member()
+    
     let data = ["1","2"]
+    
+    @IBOutlet weak var mainTableView: UITableView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var genderLabel: UILabel!
+    
+    var username: String?
+    
     
     @IBAction func onClickOffbaseCard(_ sender: UIButton) {
         
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "SendData"), object: "hello green")
+        self.navigationController?.popViewController(animated: true)
+        
+        member = memberDbManager.selectMemberInfo(username: username ?? "asdf")
+        print(member)
+        
+        nameLabel.text = member.name
+        genderLabel.text = member.gender
+        print("\(member.name)  \(member.gender) 😀😀😀")
+        
         self.mainTableView.dataSource = self
         self.mainTableView.delegate = self
     }
