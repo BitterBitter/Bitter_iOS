@@ -18,7 +18,7 @@ final class MenuViewController: baseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        member = memberDbManager.selectMemberInfo(username: "vvvv")
+        member = memberDbManager.selectMemberInfo(username: Constants.USER_NAME)
         
         nameLabel.text = member.name
         infoLabel.text = "성별 : \(member.gender!)  나이 : \(member.age!)  키 : \(member.height!)  몸무게 : \(member.weight!)"

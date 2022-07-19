@@ -20,7 +20,7 @@ final class RestoreIntoViewController: baseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        member = memberDbManager.selectMemberInfo(username: "vvvv")
+        member = memberDbManager.selectMemberInfo(username: Constants.USER_NAME)
         
         nameTextField.text = member.name!
         ageTextField.text = member.age!

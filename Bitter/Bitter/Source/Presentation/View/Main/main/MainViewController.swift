@@ -29,10 +29,7 @@ final class MainViewController: baseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "SendData"), object: "hello green")
-        self.navigationController?.popViewController(animated: true)
-        
-        member = memberDbManager.selectMemberInfo(username: username ?? "vvvv")
+        member = memberDbManager.selectMemberInfo(username: username ?? Constants.USER_NAME)
         print(member)
         
         nameLabel.text = member.name
