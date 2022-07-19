@@ -8,5 +8,9 @@
 import UIKit
 
 final class MainViewController: baseVC {
+    @IBAction func onClickOffbaseCard(_ sender: UIButton) {
+        
+    }
     
+    @IBOutlet weak var Medicine: UIView!
 }
