@@ -17,7 +17,6 @@
 		EF7C80642886389C0031330A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C80632886389C0031330A /* MainViewController.swift */; };
 		EF7C8067288639A90031330A /* baseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C8066288639A90031330A /* baseVC.swift */; };
 		EF9928B1288682C7008D7EE2 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928B0288682C7008D7EE2 /* SignUpModel.swift */; };
-		EF9928B32886838A008D7EE2 /* SignUpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928B22886838A008D7EE2 /* SignUpAPI.swift */; };
 		EF9928B52886909E008D7EE2 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928B42886909E008D7EE2 /* MainTableViewCell.swift */; };
 		EF9928BB2886952B008D7EE2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928BA2886952B008D7EE2 /* MenuViewController.swift */; };
 		EF9928BE28869934008D7EE2 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928BD28869934008D7EE2 /* MainTabBar.swift */; };
@@ -49,7 +48,6 @@
 		EF7C80632886389C0031330A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EF7C8066288639A90031330A /* baseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseVC.swift; sourceTree = "<group>"; };
 		EF9928B0288682C7008D7EE2 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
-		EF9928B22886838A008D7EE2 /* SignUpAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAPI.swift; sourceTree = "<group>"; };
 		EF9928B42886909E008D7EE2 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		EF9928BA2886952B008D7EE2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		EF9928BD28869934008D7EE2 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
@@ -236,7 +234,6 @@
 			isa = PBXGroup;
 			children = (
 				EFD1CDFF28867AD5006AFEA3 /* LoginAPI.swift */,
-				EF9928B22886838A008D7EE2 /* SignUpAPI.swift */,
 				EF9928C22886CB63008D7EE2 /* MoreInfoAPI.swift */,
 			);
 			path = Auth;
@@ -460,7 +457,6 @@
 				EFD1CDFE28867A5C006AFEA3 /* APImanager.swift in Sources */,
 				EF9928B52886909E008D7EE2 /* MainTableViewCell.swift in Sources */,
 				EF9928BB2886952B008D7EE2 /* MenuViewController.swift in Sources */,
-				EF9928B32886838A008D7EE2 /* SignUpAPI.swift in Sources */,
 				EFF8F1F92886493C006D8E3B /* SignInViewController.swift in Sources */,
 				85CA635528868B9900DEBA98 /* UIWindow.swift in Sources */,
 				EF7C80642886389C0031330A /* MainViewController.swift in Sources */,

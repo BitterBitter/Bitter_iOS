@@ -220,7 +220,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="tapNextButton:" destination="OWm-dU-7MH" eventType="touchUpInside" id="VGY-Z4-Z6S"/>
-                                    <segue destination="YQq-FH-lXt" kind="show" id="BiT-5Y-qPM"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iia-8G-4Iv">
@@ -293,7 +292,7 @@
         <!--More Information Sign Up View Controller-->
         <scene sceneID="6q0-ng-WAn">
             <objects>
-                <viewController id="YQq-FH-lXt" customClass="MoreInformationSignUpViewController" customModule="Bitter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="more" id="YQq-FH-lXt" customClass="MoreInformationSignUpViewController" customModule="Bitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lAh-Pr-ATU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

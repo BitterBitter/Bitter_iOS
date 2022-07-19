@@ -16,6 +16,8 @@ final class MoreInformationSignUpViewController: baseVC {
     @IBOutlet weak var genderTextField: TextFieldWithPadding!
     @IBOutlet weak var heightTextField: TextFieldWithPadding!
     @IBOutlet weak var weightTextField: TextFieldWithPadding!
+    var username: String?
+    var password: String?
     
     // MARK: - Method
     @IBAction func tapBackButton(_ sender: UIButton) {
