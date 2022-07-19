@@ -12,6 +12,8 @@ final class MainViewController: baseVC {
     let memberDbManager = MemberDbManager()
     var member: Member = Member()
     
+    var myPill: [MyPill] = []
+    
     let data = ["1","2"]
     
     @IBOutlet weak var mainTableView: UITableView!
@@ -30,7 +32,7 @@ final class MainViewController: baseVC {
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "SendData"), object: "hello green")
         self.navigationController?.popViewController(animated: true)
         
-        member = memberDbManager.selectMemberInfo(username: username ?? "asdf")
+        member = memberDbManager.selectMemberInfo(username: username ?? "vvvv")
         print(member)
         
         nameLabel.text = member.name
