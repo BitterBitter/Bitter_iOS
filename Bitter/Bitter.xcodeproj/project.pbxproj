@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6EBB6A5260B82B19E6FD2A6A /* Pods_Bitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6807F9C5068B77B916701BD /* Pods_Bitter.framework */; };
+		856AC8082886E8C900DC06F2 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856AC8062886E8C900DC06F2 /* main.storyboard */; };
 		85CA635528868B9900DEBA98 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CA635428868B9900DEBA98 /* UIWindow.swift */; };
+		E6A0100D680E85FF83714029 /* Pods_Bitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263378FBF0A2F9E0D7B86303 /* Pods_Bitter.framework */; };
 		EF40233C2886347000F75D96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF40233B2886347000F75D96 /* AppDelegate.swift */; };
 		EF40233E2886347000F75D96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF40233D2886347000F75D96 /* SceneDelegate.swift */; };
-		EF4023432886347000F75D96 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4023412886347000F75D96 /* main.storyboard */; };
 		EF4023452886347100F75D96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4023442886347100F75D96 /* Assets.xcassets */; };
 		EF4023482886347100F75D96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4023462886347100F75D96 /* LaunchScreen.storyboard */; };
 		EF7C80642886389C0031330A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C80632886389C0031330A /* MainViewController.swift */; };
@@ -35,14 +35,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		288FA756AB4C9C19348073BE /* Pods-Bitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitter.release.xcconfig"; path = "Target Support Files/Pods-Bitter/Pods-Bitter.release.xcconfig"; sourceTree = "<group>"; };
-		38E64EF505369CA781469112 /* Pods-Bitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitter.debug.xcconfig"; path = "Target Support Files/Pods-Bitter/Pods-Bitter.debug.xcconfig"; sourceTree = "<group>"; };
+		263378FBF0A2F9E0D7B86303 /* Pods_Bitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		856AC8072886E8C900DC06F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Bitter/Source/Presentation/View/Main/Base.lproj/main.storyboard; sourceTree = SOURCE_ROOT; };
 		85CA635428868B9900DEBA98 /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
-		B6807F9C5068B77B916701BD /* Pods_Bitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87C2437308D8054A1DF3F25A /* Pods-Bitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitter.release.xcconfig"; path = "Target Support Files/Pods-Bitter/Pods-Bitter.release.xcconfig"; sourceTree = "<group>"; };
+		B37CE3897F8B197A7320214F /* Pods-Bitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitter.debug.xcconfig"; path = "Target Support Files/Pods-Bitter/Pods-Bitter.debug.xcconfig"; sourceTree = "<group>"; };
 		EF4023382886347000F75D96 /* Bitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF40233B2886347000F75D96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF40233D2886347000F75D96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EF4023422886347000F75D96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/main.storyboard; sourceTree = "<group>"; };
 		EF4023442886347100F75D96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF4023472886347100F75D96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF4023492886347100F75D96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,18 +71,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EBB6A5260B82B19E6FD2A6A /* Pods_Bitter.framework in Frameworks */,
+				E6A0100D680E85FF83714029 /* Pods_Bitter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12F47A34E16A433F4F78C205 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				263378FBF0A2F9E0D7B86303 /* Pods_Bitter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		75291B50173AA5A5BC4C0C35 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				38E64EF505369CA781469112 /* Pods-Bitter.debug.xcconfig */,
-				288FA756AB4C9C19348073BE /* Pods-Bitter.release.xcconfig */,
+				B37CE3897F8B197A7320214F /* Pods-Bitter.debug.xcconfig */,
+				87C2437308D8054A1DF3F25A /* Pods-Bitter.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -109,7 +117,7 @@
 				EF40233A2886347000F75D96 /* Bitter */,
 				EF4023392886347000F75D96 /* Products */,
 				75291B50173AA5A5BC4C0C35 /* Pods */,
-				F4AD00A9F5B86EED43513703 /* Frameworks */,
+				12F47A34E16A433F4F78C205 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,7 +164,6 @@
 				EF9928BC28869927008D7EE2 /* tabBar */,
 				EF9928B828869504008D7EE2 /* menu */,
 				EF9928B6288694EB008D7EE2 /* main */,
-				EF4023412886347000F75D96 /* main.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -194,6 +201,7 @@
 		EF9928B6288694EB008D7EE2 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				856AC8062886E8C900DC06F2 /* main.storyboard */,
 				EF9928B7288694F5008D7EE2 /* view */,
 				EF7C80632886389C0031330A /* MainViewController.swift */,
 			);
@@ -321,14 +329,6 @@
 			path = Custom;
 			sourceTree = "<group>";
 		};
-		F4AD00A9F5B86EED43513703 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B6807F9C5068B77B916701BD /* Pods_Bitter.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -336,11 +336,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF40234C2886347100F75D96 /* Build configuration list for PBXNativeTarget "Bitter" */;
 			buildPhases = (
-				319996C3E8FA3F1C37CB4A42 /* [CP] Check Pods Manifest.lock */,
+				3DF8E35CA5AAA5FF8B93AF0B /* [CP] Check Pods Manifest.lock */,
 				EF4023342886347000F75D96 /* Sources */,
 				EF4023352886347000F75D96 /* Frameworks */,
 				EF4023362886347000F75D96 /* Resources */,
-				C91C43E105E275A8F79E4E97 /* [CP] Embed Pods Frameworks */,
+				9563686A4A2E225C0F042D65 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -392,14 +392,14 @@
 				EFF8F1F72886490F006D8E3B /* Auth.storyboard in Resources */,
 				EF4023482886347100F75D96 /* LaunchScreen.storyboard in Resources */,
 				EF4023452886347100F75D96 /* Assets.xcassets in Resources */,
-				EF4023432886347000F75D96 /* main.storyboard in Resources */,
+				856AC8082886E8C900DC06F2 /* main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		319996C3E8FA3F1C37CB4A42 /* [CP] Check Pods Manifest.lock */ = {
+		3DF8E35CA5AAA5FF8B93AF0B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -421,7 +421,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C91C43E105E275A8F79E4E97 /* [CP] Embed Pods Frameworks */ = {
+		9563686A4A2E225C0F042D65 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -471,10 +471,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EF4023412886347000F75D96 /* main.storyboard */ = {
+		856AC8062886E8C900DC06F2 /* main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EF4023422886347000F75D96 /* Base */,
+				856AC8072886E8C900DC06F2 /* Base */,
 			);
 			name = main.storyboard;
 			sourceTree = "<group>";
@@ -606,7 +606,7 @@
 		};
 		EF40234D2886347100F75D96 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38E64EF505369CA781469112 /* Pods-Bitter.debug.xcconfig */;
+			baseConfigurationReference = B37CE3897F8B197A7320214F /* Pods-Bitter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -636,7 +636,7 @@
 		};
 		EF40234E2886347100F75D96 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 288FA756AB4C9C19348073BE /* Pods-Bitter.release.xcconfig */;
+			baseConfigurationReference = 87C2437308D8054A1DF3F25A /* Pods-Bitter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
