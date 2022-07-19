@@ -14,9 +14,8 @@ final class SignInViewController: baseVC {
     
     
     @IBAction func tapLoginButton(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "main", bundle: nil)
-        guard let vc = storyboard.instantiateViewController(withIdentifier: "tab") as? MainTabBarVC else { return }
-        UIApplication.shared.keyWindow?.replaceRootViewController(vc, animated: true, completion: nil)
+
+        loginNetWorking()
     }
     
 }

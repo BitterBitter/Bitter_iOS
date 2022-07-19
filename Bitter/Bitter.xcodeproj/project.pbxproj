@@ -22,6 +22,7 @@
 		EF9928BB2886952B008D7EE2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928BA2886952B008D7EE2 /* MenuViewController.swift */; };
 		EF9928BE28869934008D7EE2 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928BD28869934008D7EE2 /* MainTabBar.swift */; };
 		EF9928C028869AAF008D7EE2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928BF28869AAF008D7EE2 /* Constants.swift */; };
+		EF9928C32886CB63008D7EE2 /* MoreInfoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928C22886CB63008D7EE2 /* MoreInfoAPI.swift */; };
 		EFD1CDF428866AB4006AFEA3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD1CDF328866AB4006AFEA3 /* SignUpViewController.swift */; };
 		EFD1CDF62886718C006AFEA3 /* MoreInformationSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD1CDF52886718C006AFEA3 /* MoreInformationSignUpViewController.swift */; };
 		EFD1CDFA288677FF006AFEA3 /* MyPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD1CDF9288677FF006AFEA3 /* MyPill.swift */; };
@@ -53,6 +54,7 @@
 		EF9928BA2886952B008D7EE2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		EF9928BD28869934008D7EE2 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		EF9928BF28869AAF008D7EE2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EF9928C22886CB63008D7EE2 /* MoreInfoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoAPI.swift; sourceTree = "<group>"; };
 		EFD1CDF328866AB4006AFEA3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EFD1CDF52886718C006AFEA3 /* MoreInformationSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInformationSignUpViewController.swift; sourceTree = "<group>"; };
 		EFD1CDF9288677FF006AFEA3 /* MyPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPill.swift; sourceTree = "<group>"; };
@@ -230,6 +232,16 @@
 			path = tabBar;
 			sourceTree = "<group>";
 		};
+		EF9928C12886CB3E008D7EE2 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				EFD1CDFF28867AD5006AFEA3 /* LoginAPI.swift */,
+				EF9928B22886838A008D7EE2 /* SignUpAPI.swift */,
+				EF9928C22886CB63008D7EE2 /* MoreInfoAPI.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		EFD1CDF728867774006AFEA3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,9 +270,8 @@
 		EFD1CDFC28867A1F006AFEA3 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				EF9928C12886CB3E008D7EE2 /* Auth */,
 				EFD1CDFD28867A5C006AFEA3 /* APImanager.swift */,
-				EFD1CDFF28867AD5006AFEA3 /* LoginAPI.swift */,
-				EF9928B22886838A008D7EE2 /* SignUpAPI.swift */,
 				EF9928BF28869AAF008D7EE2 /* Constants.swift */,
 			);
 			path = NetWork;
@@ -439,6 +450,7 @@
 				EF7C8067288639A90031330A /* baseVC.swift in Sources */,
 				EFD1CE0028867AD5006AFEA3 /* LoginAPI.swift in Sources */,
 				EFD1CDF428866AB4006AFEA3 /* SignUpViewController.swift in Sources */,
+				EF9928C32886CB63008D7EE2 /* MoreInfoAPI.swift in Sources */,
 				EFD1CDF62886718C006AFEA3 /* MoreInformationSignUpViewController.swift in Sources */,
 				EFF8F1FC28865C96006D8E3B /* TextFieldWithPadding.swift in Sources */,
 				EF9928B1288682C7008D7EE2 /* SignUpModel.swift in Sources */,

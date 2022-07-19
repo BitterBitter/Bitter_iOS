@@ -22,6 +22,7 @@ final class MoreInformationSignUpViewController: baseVC {
       self.navigationController?.popViewController(animated: true)
     }
     @IBAction func tapDoneButton(_ sender: UIButton) {
+        morSignupNetworking()
         self.navigationController?.popToRootViewController(animated: true)
     }
     

@@ -220,6 +220,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="tapNextButton:" destination="OWm-dU-7MH" eventType="touchUpInside" id="VGY-Z4-Z6S"/>
+                                    <segue destination="YQq-FH-lXt" kind="show" id="BiT-5Y-qPM"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iia-8G-4Iv">
