@@ -10,13 +10,13 @@ import Alamofire
 import KeychainAccess
 
 extension SignInViewController {
-    func loginNetWorking() -> Bool {
+    func loginNetWorking() {
         let completion: ((SignIn?) -> Void) = { data in
             guard let status = data?.status else { return }
             if status == 200 {
                 let storyboard = UIStoryboard(name: "signin", bundle: nil)
                 guard let vc = storyboard.instantiateViewController(withIdentifier: "signin") as? MainViewController else { return }
-                UIApplication.shared.keyWindow?.replaceRootViewController(vc, animated: true, completion: nil)
+//                UIApplication.shared.keyWindow?.replaceRootViewController(vc, animated: true, completion: nil)
             }
         }
         let parameters = ["":""]

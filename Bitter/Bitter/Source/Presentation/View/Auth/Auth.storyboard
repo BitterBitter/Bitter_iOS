@@ -143,7 +143,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="NYf-MK-uQO">
             <objects>
-                <viewController id="OWm-dU-7MH" customClass="SignUpViewController" customModule="Bitter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signup" id="OWm-dU-7MH" customClass="SignUpViewController" customModule="Bitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5JY-9x-ebo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
