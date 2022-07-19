@@ -15,8 +15,17 @@
 		EF4023482886347100F75D96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4023462886347100F75D96 /* LaunchScreen.storyboard */; };
 		EF7C80642886389C0031330A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C80632886389C0031330A /* MainViewController.swift */; };
 		EF7C8067288639A90031330A /* baseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C8066288639A90031330A /* baseVC.swift */; };
-		EFF8F1F72886490F006D8E3B /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFF8F1F62886490F006D8E3B /* SignIn.storyboard */; };
+		EF9928B1288682C7008D7EE2 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928B0288682C7008D7EE2 /* SignUpModel.swift */; };
+		EF9928B32886838A008D7EE2 /* SignUpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928B22886838A008D7EE2 /* SignUpAPI.swift */; };
+		EFD1CDF428866AB4006AFEA3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD1CDF328866AB4006AFEA3 /* SignUpViewController.swift */; };
+		EFD1CDF62886718C006AFEA3 /* MoreInformationSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD1CDF52886718C006AFEA3 /* MoreInformationSignUpViewController.swift */; };
+		EFD1CDFA288677FF006AFEA3 /* MyPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD1CDF9288677FF006AFEA3 /* MyPill.swift */; };
+		EFD1CDFE28867A5C006AFEA3 /* APImanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD1CDFD28867A5C006AFEA3 /* APImanager.swift */; };
+		EFD1CE0028867AD5006AFEA3 /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD1CDFF28867AD5006AFEA3 /* LoginAPI.swift */; };
+		EFD1CE0328867C2B006AFEA3 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD1CE0228867C2B006AFEA3 /* SignInModel.swift */; };
+		EFF8F1F72886490F006D8E3B /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFF8F1F62886490F006D8E3B /* Auth.storyboard */; };
 		EFF8F1F92886493C006D8E3B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF8F1F82886493C006D8E3B /* SignInViewController.swift */; };
+		EFF8F1FC28865C96006D8E3B /* TextFieldWithPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF8F1FB28865C96006D8E3B /* TextFieldWithPadding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +41,17 @@
 		EF4023492886347100F75D96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF7C80632886389C0031330A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EF7C8066288639A90031330A /* baseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseVC.swift; sourceTree = "<group>"; };
-		EFF8F1F62886490F006D8E3B /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		EF9928B0288682C7008D7EE2 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		EF9928B22886838A008D7EE2 /* SignUpAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAPI.swift; sourceTree = "<group>"; };
+		EFD1CDF328866AB4006AFEA3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		EFD1CDF52886718C006AFEA3 /* MoreInformationSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInformationSignUpViewController.swift; sourceTree = "<group>"; };
+		EFD1CDF9288677FF006AFEA3 /* MyPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPill.swift; sourceTree = "<group>"; };
+		EFD1CDFD28867A5C006AFEA3 /* APImanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APImanager.swift; sourceTree = "<group>"; };
+		EFD1CDFF28867AD5006AFEA3 /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
+		EFD1CE0228867C2B006AFEA3 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
+		EFF8F1F62886490F006D8E3B /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		EFF8F1F82886493C006D8E3B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		EFF8F1FB28865C96006D8E3B /* TextFieldWithPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithPadding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +113,9 @@
 		EF4023522886366A00F75D96 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EFF8F1F3288648D6006D8E3B /* Auth */,
 				EF7C8065288638D50031330A /* Common */,
+				EFF8F1FA28865C79006D8E3B /* Custom */,
+				EFF8F1F3288648D6006D8E3B /* Auth */,
 				EF4023532886367A00F75D96 /* Main */,
 			);
 			path = View;
@@ -124,6 +143,8 @@
 			children = (
 				EF40233B2886347000F75D96 /* AppDelegate.swift */,
 				EF40233D2886347000F75D96 /* SceneDelegate.swift */,
+				EFD1CDFB28867A18006AFEA3 /* Data */,
+				EFD1CDF728867774006AFEA3 /* Model */,
 				EF4023502886363400F75D96 /* Presentation */,
 			);
 			path = Source;
@@ -139,9 +160,54 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		EFD1CDF728867774006AFEA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFD1CE0128867C1C006AFEA3 /* Auth */,
+				EFD1CDF82886777A006AFEA3 /* Main */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFD1CDF82886777A006AFEA3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EFD1CDF9288677FF006AFEA3 /* MyPill.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EFD1CDFB28867A18006AFEA3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EFD1CDFC28867A1F006AFEA3 /* NetWork */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EFD1CDFC28867A1F006AFEA3 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				EFD1CDFD28867A5C006AFEA3 /* APImanager.swift */,
+				EFD1CDFF28867AD5006AFEA3 /* LoginAPI.swift */,
+				EF9928B22886838A008D7EE2 /* SignUpAPI.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		EFD1CE0128867C1C006AFEA3 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				EFD1CE0228867C2B006AFEA3 /* SignInModel.swift */,
+				EF9928B0288682C7008D7EE2 /* SignUpModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		EFF8F1F3288648D6006D8E3B /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				EFF8F1F62886490F006D8E3B /* Auth.storyboard */,
 				EFF8F1F5288648E7006D8E3B /* SignUp */,
 				EFF8F1F4288648DD006D8E3B /* SignIn */,
 			);
@@ -151,7 +217,6 @@
 		EFF8F1F4288648DD006D8E3B /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				EFF8F1F62886490F006D8E3B /* SignIn.storyboard */,
 				EFF8F1F82886493C006D8E3B /* SignInViewController.swift */,
 			);
 			path = SignIn;
@@ -160,8 +225,18 @@
 		EFF8F1F5288648E7006D8E3B /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				EFD1CDF328866AB4006AFEA3 /* SignUpViewController.swift */,
+				EFD1CDF52886718C006AFEA3 /* MoreInformationSignUpViewController.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		EFF8F1FA28865C79006D8E3B /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				EFF8F1FB28865C96006D8E3B /* TextFieldWithPadding.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		F4AD00A9F5B86EED43513703 /* Frameworks */ = {
@@ -232,7 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFF8F1F72886490F006D8E3B /* SignIn.storyboard in Resources */,
+				EFF8F1F72886490F006D8E3B /* Auth.storyboard in Resources */,
 				EF4023482886347100F75D96 /* LaunchScreen.storyboard in Resources */,
 				EF4023452886347100F75D96 /* Assets.xcassets in Resources */,
 				EF4023432886347000F75D96 /* Main.storyboard in Resources */,
@@ -289,10 +364,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF7C8067288639A90031330A /* baseVC.swift in Sources */,
+				EFD1CE0028867AD5006AFEA3 /* LoginAPI.swift in Sources */,
+				EFD1CDF428866AB4006AFEA3 /* SignUpViewController.swift in Sources */,
+				EFD1CDF62886718C006AFEA3 /* MoreInformationSignUpViewController.swift in Sources */,
+				EFF8F1FC28865C96006D8E3B /* TextFieldWithPadding.swift in Sources */,
+				EF9928B1288682C7008D7EE2 /* SignUpModel.swift in Sources */,
+				EFD1CE0328867C2B006AFEA3 /* SignInModel.swift in Sources */,
 				EF40233C2886347000F75D96 /* AppDelegate.swift in Sources */,
 				EF40233E2886347000F75D96 /* SceneDelegate.swift in Sources */,
+				EFD1CDFE28867A5C006AFEA3 /* APImanager.swift in Sources */,
+				EF9928B32886838A008D7EE2 /* SignUpAPI.swift in Sources */,
 				EFF8F1F92886493C006D8E3B /* SignInViewController.swift in Sources */,
 				EF7C80642886389C0031330A /* MainViewController.swift in Sources */,
+				EFD1CDFA288677FF006AFEA3 /* MyPill.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

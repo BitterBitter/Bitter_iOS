@@ -11,17 +11,19 @@
         <!--Item 2-->
         <scene sceneID="9HY-Ng-bAN">
             <objects>
-                <viewController id="42L-aA-sV1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6F1-2o-R9D">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="8wQ-yq-X3s"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="1Z5-WA-IzN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z3D-UZ-I6J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+
             <point key="canvasLocation" x="-111" y="-249"/>
         </scene>
         <!--Item 1-->
