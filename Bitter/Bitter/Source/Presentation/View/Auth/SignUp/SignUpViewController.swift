@@ -12,7 +12,8 @@ final class SignUpViewController: baseVC {
     
     @IBOutlet weak var usernameTextField: TextFieldWithPadding!
     @IBOutlet weak var passwordTextField: TextFieldWithPadding!
-    
+    var username: String?
+    var password: String?
     
     
     // MARK: - Method
@@ -20,7 +21,14 @@ final class SignUpViewController: baseVC {
       self.navigationController?.popViewController(animated: true)
     }
     @IBAction func tapNextButton(_ sender: UIButton) {
-        signupNetworking()
+        
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "more") as? MoreInformationSignUpViewController else { return }
+        
+        vc.username = usernameTextField.text!
+        vc.password = passwordTextField.text!
+        
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     

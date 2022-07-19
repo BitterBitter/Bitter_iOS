@@ -6,9 +6,20 @@
 //
 
 import Foundation
-import HandyJSON
+import RealmSwift
 
-class MyPill: HandyJSON {
+class MyPill: Object {
+    @objc dynamic var pillName: String?
+    @objc dynamic var pillInfo: String?
+    @objc dynamic var pillTime: Date?
+    required override init() {}
     
-    required init() {}
+    var dateFormatter: DateFormatter = {
+        let dataFormatter = DateFormatter()
+        dataFormatter.dateFormat = "YYYY.MM.dd HH:mm"
+        
+        return dataFormatter
+    }()
+    
+    dateFormatter.string(from: pillTime)
 }

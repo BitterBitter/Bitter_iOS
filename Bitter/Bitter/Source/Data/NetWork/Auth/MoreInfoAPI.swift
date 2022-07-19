@@ -14,7 +14,7 @@ extension MoreInformationSignUpViewController {
         print("😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆")
         print("\(Constants.SERVER_IP)auth/signup/more")
         
-        let param = ["name": nameTextField.text!, "age": ageTextField.text!, "gender":genderTextField.text!, "helm":heightTextField.text!,"Weight":weightTextField.text!]
+        let param = ["username": username!, "password": password!, "name": nameTextField.text!, "age": Int(ageTextField.text!)!, "gender":genderTextField.text!, "helm":heightTextField.text!,"Weight":weightTextField.text!] as [String : Any]
         print(param)
         
         let completion: ((SignUp?) -> Void) = { data in
