@@ -748,6 +748,7 @@
                                 <connections>
                                     <action selector="PlusInfomationButton:" destination="jz6-Hs-3L6" eventType="touchUpInside" id="Z8H-19-2lM"/>
                                     <action selector="onClickOffbaseCard:" destination="gil-bj-x2f" eventType="touchUpInside" id="dlm-g9-FVY"/>
+                                    <segue destination="Du1-BB-Ghg" kind="showDetail" id="hNn-0P-VvJ"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nYG-j3-I8U">
@@ -780,10 +781,18 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="복용시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMc-hv-1ED" userLabel="복용시간">
+                                                    <rect key="frame" x="85" y="50.5" width="56" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="PMc-hv-1ED" firstAttribute="leading" secondItem="Gh5-J4-2fR" secondAttribute="trailing" constant="10" id="2ws-nC-o9f"/>
                                                 <constraint firstItem="syS-mx-KAo" firstAttribute="top" secondItem="GoG-JX-5YV" secondAttribute="topMargin" id="5SD-mU-4Pm"/>
                                                 <constraint firstItem="syS-mx-KAo" firstAttribute="leading" secondItem="Gh5-J4-2fR" secondAttribute="trailing" constant="8" symbolic="YES" id="BbB-6E-8lE"/>
+                                                <constraint firstAttribute="bottom" secondItem="PMc-hv-1ED" secondAttribute="bottom" id="Lh9-ez-4I9"/>
                                                 <constraint firstItem="Gh5-J4-2fR" firstAttribute="leading" secondItem="GoG-JX-5YV" secondAttribute="leading" constant="5" id="Uiz-qc-T24"/>
                                                 <constraint firstItem="Gh5-J4-2fR" firstAttribute="top" secondItem="GoG-JX-5YV" secondAttribute="top" id="VLi-tO-vUh"/>
                                                 <constraint firstAttribute="trailing" secondItem="7wI-pQ-IJa" secondAttribute="trailing" constant="5" id="VQU-mK-zzg"/>
@@ -836,6 +845,110 @@
                 <exit id="jz6-Hs-3L6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="771.01449275362324" y="-546.42857142857144"/>
+<<<<<<< Updated upstream
+=======
+        </scene>
+        <!--Adding Pill View Controller-->
+        <scene sceneID="t4Y-gX-EoD">
+            <objects>
+                <viewController id="Du1-BB-Ghg" customClass="AddingPillViewController" customModule="Bitter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XBx-hj-isD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="xJ3-YB-69R">
+                                <rect key="frame" x="50" y="114" width="314" height="85"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="약 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYK-VB-qwR">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="약 이름을 입력 해 주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uZY-Ag-VMR">
+                                        <rect key="frame" x="0.0" y="51" width="314" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="5rx-3t-0Ov">
+                                <rect key="frame" x="50" y="244" width="314" height="85"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="약 설명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMc-RN-IhK">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="약 이름을 입력 해 주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JKs-Qf-NtL">
+                                        <rect key="frame" x="0.0" y="51" width="314" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="roz-L9-iOp">
+                                <rect key="frame" x="50" y="374" width="314" height="267"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="약 먹는 시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HX0-3e-fDd">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="d2g-Uu-fPK">
+                                        <rect key="frame" x="0.0" y="51" width="314" height="216"/>
+                                    </datePicker>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBP-2f-SlG">
+                                <rect key="frame" x="100" y="718" width="214" height="44"/>
+                                <color key="backgroundColor" red="0.41176470590000003" green="0.43921568630000002" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="등록">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="16.850000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tapRegisterButton:" destination="Du1-BB-Ghg" eventType="touchUpInside" id="a7r-o6-dG7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uN7-dc-mgm"/>
+                        <color key="backgroundColor" red="0.8392156959" green="0.85098040100000005" blue="0.98823523520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="uN7-dc-mgm" firstAttribute="trailing" secondItem="xJ3-YB-69R" secondAttribute="trailing" constant="50" id="B4N-IV-Vgi"/>
+                            <constraint firstItem="xJ3-YB-69R" firstAttribute="leading" secondItem="uN7-dc-mgm" secondAttribute="leading" constant="50" id="CWl-Bu-DL4"/>
+                            <constraint firstItem="roz-L9-iOp" firstAttribute="top" secondItem="5rx-3t-0Ov" secondAttribute="bottom" constant="45" id="Cex-gE-o5j"/>
+                            <constraint firstItem="QBP-2f-SlG" firstAttribute="leading" secondItem="uN7-dc-mgm" secondAttribute="leading" constant="100" id="DeD-k6-j5o"/>
+                            <constraint firstItem="5rx-3t-0Ov" firstAttribute="leading" secondItem="uN7-dc-mgm" secondAttribute="leading" constant="50" id="F1A-oC-E9j"/>
+                            <constraint firstItem="QBP-2f-SlG" firstAttribute="centerX" secondItem="XBx-hj-isD" secondAttribute="centerX" id="JIM-qr-Pz4"/>
+                            <constraint firstItem="roz-L9-iOp" firstAttribute="leading" secondItem="uN7-dc-mgm" secondAttribute="leading" constant="50" id="Kre-0b-DPt"/>
+                            <constraint firstItem="uN7-dc-mgm" firstAttribute="trailing" secondItem="QBP-2f-SlG" secondAttribute="trailing" constant="100" id="XTs-C4-MeX"/>
+                            <constraint firstItem="uN7-dc-mgm" firstAttribute="bottom" secondItem="QBP-2f-SlG" secondAttribute="bottom" constant="80" id="cNc-kK-dGF"/>
+                            <constraint firstItem="xJ3-YB-69R" firstAttribute="top" secondItem="uN7-dc-mgm" secondAttribute="top" constant="70" id="fA7-SR-VeO"/>
+                            <constraint firstItem="uN7-dc-mgm" firstAttribute="trailing" secondItem="roz-L9-iOp" secondAttribute="trailing" constant="50" id="jUt-71-yjl"/>
+                            <constraint firstItem="uN7-dc-mgm" firstAttribute="trailing" secondItem="5rx-3t-0Ov" secondAttribute="trailing" constant="50" id="jkX-aA-8q5"/>
+                            <constraint firstItem="5rx-3t-0Ov" firstAttribute="top" secondItem="xJ3-YB-69R" secondAttribute="bottom" constant="45" id="lLq-Ky-EqK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pillDescriptionTextField" destination="JKs-Qf-NtL" id="euo-O7-1dM"/>
+                        <outlet property="pillNameTextField" destination="uZY-Ag-VMR" id="Qw8-Wn-efs"/>
+                        <outlet property="pillTime" destination="d2g-Uu-fPK" id="NSe-0Q-ZxS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xq2-Sd-s1U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846" y="-843"/>
+>>>>>>> Stashed changes
         </scene>
         <!--main-->
         <scene sceneID="bGt-IJ-z6O">
@@ -896,6 +1009,10 @@
         </scene>
     </scenes>
     <resources>
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
         <image name="1471290_20211106081954_209_0001" width="1000" height="682"/>
         <image name="Group 13" width="152" height="152"/>
         <image name="Logout" width="34" height="34"/>
@@ -904,6 +1021,13 @@
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="settings" width="31" height="31"/>
+<<<<<<< Updated upstream
+=======
+=======
+        <image name="house.fill" catalog="system" width="32" height="32"/>
+        <image name="list.dash" catalog="system" width="32" height="32"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
         <image name="title" width="201" height="56"/>
         <image name="title (1)" width="239" height="72"/>
         <systemColor name="labelColor">

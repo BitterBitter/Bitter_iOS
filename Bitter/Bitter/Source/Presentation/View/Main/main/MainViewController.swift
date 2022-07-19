@@ -12,6 +12,11 @@ final class MainViewController: baseVC {
     let memberDbManager = MemberDbManager()
     var member: Member = Member()
     
+<<<<<<< Updated upstream
+=======
+    var myPill: [MyPill] = []
+    
+>>>>>>> Stashed changes
     let data = ["1","2"]
     
     @IBOutlet weak var mainTableView: UITableView!
@@ -44,13 +49,14 @@ final class MainViewController: baseVC {
 
 extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.data.count
+        return self.myPill.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MainTableViewCell?     = self.mainTableView.dequeueReusableCell(withIdentifier: "MainCell", for: indexPath) as? MainTableViewCell
         guard let cell = cell else { return UITableViewCell() }
-        cell.titleLabel.text = data[indexPath.row]
+        cell.titleLabel.text = myPill[indexPath.row].pillName
+        cell.subtitleLabel.text = myPill[indexPath.row].pillInfo
         return cell
     }
     

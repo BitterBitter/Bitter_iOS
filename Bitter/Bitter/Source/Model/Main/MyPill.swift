@@ -20,6 +20,9 @@ class MyPill: Object {
         
         return dataFormatter
     }()
+<<<<<<< Updated upstream
     
     dateFormatter.string(from: pillTime)
+=======
+>>>>>>> Stashed changes
 }
