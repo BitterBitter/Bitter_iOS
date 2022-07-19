@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="S2W-pp-a3I">
-                                <rect key="frame" x="94.666666666666686" y="234" width="201" height="56"/>
+                                <rect key="frame" x="94.666666666666686" y="184" width="201" height="56"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="laucn_page_image" translatesAutoresizingMaskIntoConstraints="NO" id="tQ0-OW-DPL">
                                 <rect key="frame" x="0.0" y="280" width="358" height="564"/>
@@ -32,7 +32,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.8392156959" green="0.85098040100000005" blue="0.98823523520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="S2W-pp-a3I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="190" id="PdJ-r4-Vzm"/>
+                            <constraint firstItem="S2W-pp-a3I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="PdJ-r4-Vzm"/>
                             <constraint firstItem="gus-Qj-evb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gth-1o-gmW"/>
                             <constraint firstItem="S2W-pp-a3I" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="luF-v1-BBx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gus-Qj-evb" secondAttribute="bottom" constant="20" id="nYD-ei-U8G"/>
