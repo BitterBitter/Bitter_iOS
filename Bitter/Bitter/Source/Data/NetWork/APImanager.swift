@@ -15,7 +15,7 @@ class APImanager: NSObject {
                                         method: HTTPMethod = .get,
                                         parameters: Parameters? = nil,
                                         headers: HTTPHeaders? = ["Content-Type": "application/json"],
-                                        encoding: ParameterEncoding = JSONEncoding.default,
+                                        encoding: ParameterEncoding =  URLEncoding(destination: .queryString),
                                         completion: @escaping (T?) -> Void) {
         AF.request(url, method: method, parameters: parameters, encoding: encoding, headers: headers) { $0.timeoutInterval = 15 }.responseJSON { response in
             switch response.result {

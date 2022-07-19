@@ -21,7 +21,6 @@ final class SignUpViewController: baseVC {
     }
     @IBAction func tapNextButton(_ sender: UIButton) {
         signupNetworking()
-        self.navigationController?.popToRootViewController(animated: true)
     }
     
     
