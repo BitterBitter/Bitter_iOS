@@ -23,8 +23,6 @@ final class MoreInformationSignUpViewController: baseVC {
     }
     @IBAction func tapDoneButton(_ sender: UIButton) {
         self.navigationController?.popToRootViewController(animated: true)
-        //Todo : 통신
-        
     }
     
     

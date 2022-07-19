@@ -8,23 +8,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--메뉴-->
         <scene sceneID="9HY-Ng-bAN">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="Bitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="1Z5-WA-IzN"/>
+                    <tabBarItem key="tabBarItem" title="메뉴" image="list.dash" catalog="system" id="1Z5-WA-IzN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z3D-UZ-I6J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-111" y="-249"/>
+            <point key="canvasLocation" x="-113" y="-204"/>
         </scene>
-        <!--Item 1-->
+        <!--홈-->
         <scene sceneID="vie-55-Sed">
             <objects>
                 <viewController storyboardIdentifier="main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gil-bj-x2f" customClass="MainViewController" customModule="Bitter" customModuleProvider="target" sceneMemberID="viewController">
@@ -66,9 +66,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pk-0z-AY1">
-                                <rect key="frame" x="344" y="42" width="46" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pk-0z-AY1">
+                                <rect key="frame" x="348" y="40" width="46" height="56"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="+">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
@@ -83,7 +82,7 @@
                                 <rect key="frame" x="0.0" y="334" width="414" height="479"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainCell" id="3N6-Le-Sfn">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainCell" id="3N6-Le-Sfn" customClass="MainTableViewCell" customModule="Bitter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="70.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3N6-Le-Sfn" id="GoG-JX-5YV">
@@ -97,27 +96,35 @@
                                                         <constraint firstAttribute="height" constant="70" id="ngu-l5-qfY"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="약 추가" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syS-mx-KAo">
-                                                    <rect key="frame" x="83" y="11" width="63" height="27"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+버튼을 눌러 현제 복용하고 계신 약을 추가해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wI-pQ-IJa">
+                                                    <rect key="frame" x="83" y="38" width="326" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+버튼을 눌러 현제 복용하고 계신 약을 추가해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wI-pQ-IJa">
-                                                    <rect key="frame" x="83" y="38" width="326" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="약 추가" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syS-mx-KAo">
+                                                    <rect key="frame" x="83" y="11" width="63" height="27"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="syS-mx-KAo" firstAttribute="top" secondItem="GoG-JX-5YV" secondAttribute="topMargin" id="5SD-mU-4Pm"/>
+                                                <constraint firstItem="syS-mx-KAo" firstAttribute="leading" secondItem="Gh5-J4-2fR" secondAttribute="trailing" constant="8" symbolic="YES" id="BbB-6E-8lE"/>
                                                 <constraint firstItem="Gh5-J4-2fR" firstAttribute="leading" secondItem="GoG-JX-5YV" secondAttribute="leading" constant="5" id="Uiz-qc-T24"/>
                                                 <constraint firstItem="Gh5-J4-2fR" firstAttribute="top" secondItem="GoG-JX-5YV" secondAttribute="top" id="VLi-tO-vUh"/>
+                                                <constraint firstAttribute="trailing" secondItem="7wI-pQ-IJa" secondAttribute="trailing" constant="5" id="VQU-mK-zzg"/>
+                                                <constraint firstItem="7wI-pQ-IJa" firstAttribute="top" secondItem="syS-mx-KAo" secondAttribute="bottom" id="Zct-WU-Obg"/>
                                                 <constraint firstAttribute="bottom" secondItem="Gh5-J4-2fR" secondAttribute="bottom" id="ail-Zc-Qpi"/>
+                                                <constraint firstItem="7wI-pQ-IJa" firstAttribute="leading" secondItem="Gh5-J4-2fR" secondAttribute="trailing" constant="8" symbolic="YES" id="nQe-XO-SdL"/>
+                                                <constraint firstAttribute="bottom" secondItem="7wI-pQ-IJa" secondAttribute="bottom" constant="12.5" id="ysQ-BY-Csi"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="subtitleLabel" destination="7wI-pQ-IJa" id="9y7-Rj-s7j"/>
+                                            <outlet property="titleLabel" destination="syS-mx-KAo" id="vkW-Y0-wOt"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -131,13 +138,15 @@
                             <constraint firstItem="nYG-j3-I8U" firstAttribute="leading" secondItem="JSI-GJ-vb7" secondAttribute="leading" id="HL6-nZ-ebm"/>
                             <constraint firstItem="nYG-j3-I8U" firstAttribute="top" secondItem="e5s-TU-f5A" secondAttribute="bottom" constant="18" id="If4-E0-Pus"/>
                             <constraint firstItem="Utj-Ou-qvE" firstAttribute="leading" secondItem="e5s-TU-f5A" secondAttribute="trailing" constant="10" id="N7Y-MI-9Kf"/>
+                            <constraint firstItem="JSI-GJ-vb7" firstAttribute="trailing" secondItem="0pk-0z-AY1" secondAttribute="trailing" constant="20" id="Qtb-uA-qt9"/>
+                            <constraint firstItem="0pk-0z-AY1" firstAttribute="top" secondItem="TR1-oS-IKa" secondAttribute="top" constant="40" id="iOn-Pd-Xuh"/>
                             <constraint firstItem="e5s-TU-f5A" firstAttribute="leading" secondItem="TR1-oS-IKa" secondAttribute="leadingMargin" id="mNX-d1-uZQ"/>
                             <constraint firstItem="Utj-Ou-qvE" firstAttribute="top" secondItem="JSI-GJ-vb7" secondAttribute="top" constant="120" id="ueq-9T-Mdt"/>
                             <constraint firstItem="JSI-GJ-vb7" firstAttribute="trailing" secondItem="nYG-j3-I8U" secondAttribute="trailing" id="x2C-co-2gh"/>
                             <constraint firstItem="D1H-0j-c4f" firstAttribute="leading" secondItem="JSI-GJ-vb7" secondAttribute="leading" constant="31" id="znr-H4-RU7"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="igY-bQ-cSa">
+                    <tabBarItem key="tabBarItem" title="홈" image="house.fill" catalog="system" id="igY-bQ-cSa">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
@@ -147,19 +156,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z7W-zs-cdW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="jz6-Hs-3L6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-111.59420289855073" y="-857.14285714285711"/>
+            <point key="canvasLocation" x="-112" y="-867"/>
         </scene>
         <!--main-->
         <scene sceneID="bGt-IJ-z6O">
             <objects>
-                <tabBarController title="main" id="eqj-iv-G3e" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tab" title="main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eqj-iv-G3e" customClass="MainTabBarVC" customModule="Bitter" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tc7-Qh-Dcw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="gil-bj-x2f" kind="relationship" relationship="viewControllers" id="PAb-k3-b93"/>
+                        <segue destination="gil-bj-x2f" kind="relationship" relationship="viewControllers" id="zuP-T4-8yN"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1W8-d3-nf8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0Z-d3-4YY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -168,6 +178,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="house.fill" catalog="system" width="32" height="32"/>
+        <image name="list.dash" catalog="system" width="32" height="32"/>
         <image name="title" width="201" height="56"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

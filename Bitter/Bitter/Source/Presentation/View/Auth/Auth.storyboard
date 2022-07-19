@@ -219,7 +219,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="YQq-FH-lXt" kind="show" id="PuR-Hp-gfO"/>
+                                    <action selector="tapNextButton:" destination="OWm-dU-7MH" eventType="touchUpInside" id="VGY-Z4-Z6S"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iia-8G-4Iv">
@@ -280,6 +280,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4ir-k7-URR"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="14L-q7-Z76" id="QUn-vV-qJU"/>
+                        <outlet property="usernameTextField" destination="YfI-Ax-mhA" id="L37-uy-Ef7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBO-t9-OUs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

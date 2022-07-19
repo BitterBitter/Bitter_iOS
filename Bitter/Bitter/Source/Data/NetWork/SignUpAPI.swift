@@ -9,15 +9,19 @@ import UIKit
 import Alamofire
 import KeychainAccess
 
-extension MoreInformationSignUpViewController {
+extension SignUpViewController {
     func signupNetworking() {
+        print("😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆")
+        print("\(Constants.SERVER_IP)auth/signup")
+        
+        let param1 = ["username": usernameTextField.text!, "password": passwordTextField.text!]
+        print(param1)
+        
         let completion: ((SignUp?) -> Void) = { data in
             guard let status = data?.status else { return }
-            if status == 200 {
-                let storyboard = UIStoryboard(name: "signup", bundle: nil)
-                guard let vc = storyboard.instantiateViewController(withIdentifier: "signup") as? MainViewController else { return }
-//                UIApplication.shared.keyWindow?.replaceRootViewController(vc, animated: true, completion: nil)
-            }
+            
+            print(data?.status)
         }
+        APImanager.doRequest("http://172.16.1.40:8080/auth/signup", method: .post, parameters: param1, completion: completion)
     }
 }

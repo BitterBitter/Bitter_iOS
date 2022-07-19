@@ -29,8 +29,9 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = self.mainTableView.dequeueReusableCell(withIdentifier: "MainCell", for: indexPath)
-        cell.textLabel?.text = self.data[indexPath.row]
+        let cell: MainTableViewCell?     = self.mainTableView.dequeueReusableCell(withIdentifier: "MainCell", for: indexPath) as? MainTableViewCell
+        guard let cell = cell else { return UITableViewCell() }
+        cell.titleLabel.text = data[indexPath.row]
         return cell
     }
     

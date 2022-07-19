@@ -18,6 +18,10 @@
 		EF7C8067288639A90031330A /* baseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C8066288639A90031330A /* baseVC.swift */; };
 		EF9928B1288682C7008D7EE2 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928B0288682C7008D7EE2 /* SignUpModel.swift */; };
 		EF9928B32886838A008D7EE2 /* SignUpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928B22886838A008D7EE2 /* SignUpAPI.swift */; };
+		EF9928B52886909E008D7EE2 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928B42886909E008D7EE2 /* MainTableViewCell.swift */; };
+		EF9928BB2886952B008D7EE2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928BA2886952B008D7EE2 /* MenuViewController.swift */; };
+		EF9928BE28869934008D7EE2 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928BD28869934008D7EE2 /* MainTabBar.swift */; };
+		EF9928C028869AAF008D7EE2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928BF28869AAF008D7EE2 /* Constants.swift */; };
 		EFD1CDF428866AB4006AFEA3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD1CDF328866AB4006AFEA3 /* SignUpViewController.swift */; };
 		EFD1CDF62886718C006AFEA3 /* MoreInformationSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD1CDF52886718C006AFEA3 /* MoreInformationSignUpViewController.swift */; };
 		EFD1CDFA288677FF006AFEA3 /* MyPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD1CDF9288677FF006AFEA3 /* MyPill.swift */; };
@@ -45,6 +49,10 @@
 		EF7C8066288639A90031330A /* baseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseVC.swift; sourceTree = "<group>"; };
 		EF9928B0288682C7008D7EE2 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		EF9928B22886838A008D7EE2 /* SignUpAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAPI.swift; sourceTree = "<group>"; };
+		EF9928B42886909E008D7EE2 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		EF9928BA2886952B008D7EE2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		EF9928BD28869934008D7EE2 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		EF9928BF28869AAF008D7EE2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EFD1CDF328866AB4006AFEA3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EFD1CDF52886718C006AFEA3 /* MoreInformationSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInformationSignUpViewController.swift; sourceTree = "<group>"; };
 		EFD1CDF9288677FF006AFEA3 /* MyPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPill.swift; sourceTree = "<group>"; };
@@ -143,8 +151,10 @@
 		EF4023532886367A00F75D96 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EF9928BC28869927008D7EE2 /* tabBar */,
+				EF9928B828869504008D7EE2 /* menu */,
+				EF9928B6288694EB008D7EE2 /* main */,
 				EF4023412886347000F75D96 /* main.storyboard */,
-				EF7C80632886389C0031330A /* MainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -179,6 +189,47 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		EF9928B6288694EB008D7EE2 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				EF9928B7288694F5008D7EE2 /* view */,
+				EF7C80632886389C0031330A /* MainViewController.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		EF9928B7288694F5008D7EE2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EF9928B42886909E008D7EE2 /* MainTableViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		EF9928B828869504008D7EE2 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				EF9928B928869510008D7EE2 /* view */,
+				EF9928BA2886952B008D7EE2 /* MenuViewController.swift */,
+			);
+			path = menu;
+			sourceTree = "<group>";
+		};
+		EF9928B928869510008D7EE2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		EF9928BC28869927008D7EE2 /* tabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EF9928BD28869934008D7EE2 /* MainTabBar.swift */,
+			);
+			path = tabBar;
+			sourceTree = "<group>";
+		};
 		EFD1CDF728867774006AFEA3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +261,7 @@
 				EFD1CDFD28867A5C006AFEA3 /* APImanager.swift */,
 				EFD1CDFF28867AD5006AFEA3 /* LoginAPI.swift */,
 				EF9928B22886838A008D7EE2 /* SignUpAPI.swift */,
+				EF9928BF28869AAF008D7EE2 /* Constants.swift */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -382,6 +434,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF9928BE28869934008D7EE2 /* MainTabBar.swift in Sources */,
+				EF9928C028869AAF008D7EE2 /* Constants.swift in Sources */,
 				EF7C8067288639A90031330A /* baseVC.swift in Sources */,
 				EFD1CE0028867AD5006AFEA3 /* LoginAPI.swift in Sources */,
 				EFD1CDF428866AB4006AFEA3 /* SignUpViewController.swift in Sources */,
@@ -392,6 +446,8 @@
 				EF40233C2886347000F75D96 /* AppDelegate.swift in Sources */,
 				EF40233E2886347000F75D96 /* SceneDelegate.swift in Sources */,
 				EFD1CDFE28867A5C006AFEA3 /* APImanager.swift in Sources */,
+				EF9928B52886909E008D7EE2 /* MainTableViewCell.swift in Sources */,
+				EF9928BB2886952B008D7EE2 /* MenuViewController.swift in Sources */,
 				EF9928B32886838A008D7EE2 /* SignUpAPI.swift in Sources */,
 				EFF8F1F92886493C006D8E3B /* SignInViewController.swift in Sources */,
 				85CA635528868B9900DEBA98 /* UIWindow.swift in Sources */,
