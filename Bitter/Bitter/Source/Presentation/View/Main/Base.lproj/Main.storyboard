@@ -16,20 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="1Z5-WA-IzN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z3D-UZ-I6J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-
             <point key="canvasLocation" x="-111" y="-249"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="vie-55-Sed">
             <objects>
-                <viewController storyboardIdentifier="main" id="gil-bj-x2f" customClass="MainViewController" customModule="Bitter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gil-bj-x2f" customClass="MainViewController" customModule="Bitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TR1-oS-IKa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="-111.59420289855073" y="-857.14285714285711"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--main-->
         <scene sceneID="bGt-IJ-z6O">
             <objects>
-                <tabBarController id="eqj-iv-G3e" sceneMemberID="viewController">
+                <tabBarController title="main" id="eqj-iv-G3e" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tc7-Qh-Dcw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -162,7 +160,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="gil-bj-x2f" kind="relationship" relationship="viewControllers" id="PAb-k3-b93"/>
-                        <segue destination="42L-aA-sV1" kind="relationship" relationship="viewControllers" id="So6-JU-toI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0Z-d3-4YY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
