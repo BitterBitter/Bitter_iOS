@@ -25,7 +25,6 @@
 		EF9928C32886CB63008D7EE2 /* MoreInfoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928C22886CB63008D7EE2 /* MoreInfoAPI.swift */; };
 		EF9928C72887010F008D7EE2 /* MemberDbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928C62887010F008D7EE2 /* MemberDbManager.swift */; };
 		EF9928C928870457008D7EE2 /* MemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928C828870457008D7EE2 /* MemberModel.swift */; };
-		EF9928CB288729CC008D7EE2 /* SendDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928CA288729CC008D7EE2 /* SendDataDelegate.swift */; };
 		EFD1CDF428866AB4006AFEA3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD1CDF328866AB4006AFEA3 /* SignUpViewController.swift */; };
 		EFD1CDF62886718C006AFEA3 /* MoreInformationSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD1CDF52886718C006AFEA3 /* MoreInformationSignUpViewController.swift */; };
 		EFD1CDFA288677FF006AFEA3 /* MyPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD1CDF9288677FF006AFEA3 /* MyPill.swift */; };
@@ -60,7 +59,6 @@
 		EF9928C22886CB63008D7EE2 /* MoreInfoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoAPI.swift; sourceTree = "<group>"; };
 		EF9928C62887010F008D7EE2 /* MemberDbManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDbManager.swift; sourceTree = "<group>"; };
 		EF9928C828870457008D7EE2 /* MemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberModel.swift; sourceTree = "<group>"; };
-		EF9928CA288729CC008D7EE2 /* SendDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDataDelegate.swift; sourceTree = "<group>"; };
 		EFD1CDF328866AB4006AFEA3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EFD1CDF52886718C006AFEA3 /* MoreInformationSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInformationSignUpViewController.swift; sourceTree = "<group>"; };
 		EFD1CDF9288677FF006AFEA3 /* MyPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPill.swift; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 			children = (
 				85CA635228868B7400DEBA98 /* Extension */,
 				EF4023522886366A00F75D96 /* View */,
-				EF9928CA288729CC008D7EE2 /* SendDataDelegate.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -466,7 +463,6 @@
 				EF9928C028869AAF008D7EE2 /* Constants.swift in Sources */,
 				EF7C8067288639A90031330A /* baseVC.swift in Sources */,
 				EFD1CE0028867AD5006AFEA3 /* LoginAPI.swift in Sources */,
-				EF9928CB288729CC008D7EE2 /* SendDataDelegate.swift in Sources */,
 				EFD1CDF428866AB4006AFEA3 /* SignUpViewController.swift in Sources */,
 				EF9928C72887010F008D7EE2 /* MemberDbManager.swift in Sources */,
 				EF9928C32886CB63008D7EE2 /* MoreInfoAPI.swift in Sources */,
