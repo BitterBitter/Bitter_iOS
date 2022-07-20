@@ -772,11 +772,18 @@
                                 <connections>
                                     <action selector="PlusInfomationButton:" destination="jz6-Hs-3L6" eventType="touchUpInside" id="Z8H-19-2lM"/>
                                     <action selector="onClickOffbaseCard:" destination="gil-bj-x2f" eventType="touchUpInside" id="dlm-g9-FVY"/>
-                                    <segue destination="H08-GP-zQU" kind="showDetail" id="p6F-3P-AfH"/>
+                                    <segue destination="H08-GP-zQU" kind="show" id="0YM-Qw-O2I"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ 버튼을 눌러 약을 추가 해주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1hE-gu-VpK">
+                                <rect key="frame" x="0.0" y="437" width="414" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nYG-j3-I8U">
-                                <rect key="frame" x="0.0" y="334" width="414" height="479"/>
+                                <rect key="frame" x="0.0" y="376" width="414" height="437"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainCell" id="3N6-Le-Sfn" customClass="MainTableViewCell" customModule="Bitter" customModuleProvider="target">
@@ -831,19 +838,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내가 먹는 약" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFG-pG-eQx">
+                                <rect key="frame" x="20" y="341" width="119" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JSI-GJ-vb7"/>
                         <color key="backgroundColor" red="0.8392156959" green="0.85098040100000005" blue="0.98823523520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="nYG-j3-I8U" firstAttribute="bottom" secondItem="JSI-GJ-vb7" secondAttribute="bottom" id="4lO-Qn-tCo"/>
+                            <constraint firstItem="mFG-pG-eQx" firstAttribute="leading" secondItem="JSI-GJ-vb7" secondAttribute="leading" constant="20" id="4ph-AE-vlx"/>
                             <constraint firstItem="e5s-TU-f5A" firstAttribute="top" secondItem="JSI-GJ-vb7" secondAttribute="top" constant="120" id="6Sj-aI-3Md"/>
                             <constraint firstItem="D1H-0j-c4f" firstAttribute="top" secondItem="JSI-GJ-vb7" secondAttribute="top" constant="14" id="ACF-dm-y0I"/>
                             <constraint firstItem="T90-C9-g2E" firstAttribute="top" secondItem="Utj-Ou-qvE" secondAttribute="bottom" constant="15" id="ERt-q5-Yef"/>
                             <constraint firstItem="nYG-j3-I8U" firstAttribute="leading" secondItem="JSI-GJ-vb7" secondAttribute="leading" id="HL6-nZ-ebm"/>
-                            <constraint firstItem="nYG-j3-I8U" firstAttribute="top" secondItem="e5s-TU-f5A" secondAttribute="bottom" constant="18" id="If4-E0-Pus"/>
+                            <constraint firstItem="nYG-j3-I8U" firstAttribute="top" secondItem="e5s-TU-f5A" secondAttribute="bottom" constant="60" id="If4-E0-Pus"/>
                             <constraint firstItem="T90-C9-g2E" firstAttribute="leading" secondItem="e5s-TU-f5A" secondAttribute="trailing" constant="16" id="Kjb-6e-UQj"/>
                             <constraint firstItem="Utj-Ou-qvE" firstAttribute="leading" secondItem="e5s-TU-f5A" secondAttribute="trailing" constant="16" id="N7Y-MI-9Kf"/>
                             <constraint firstItem="JSI-GJ-vb7" firstAttribute="trailing" secondItem="0pk-0z-AY1" secondAttribute="trailing" constant="20" id="Qtb-uA-qt9"/>
+                            <constraint firstItem="mFG-pG-eQx" firstAttribute="top" secondItem="e5s-TU-f5A" secondAttribute="bottom" constant="25" id="WER-GZ-7Id"/>
                             <constraint firstItem="0pk-0z-AY1" firstAttribute="top" secondItem="TR1-oS-IKa" secondAttribute="top" constant="40" id="iOn-Pd-Xuh"/>
                             <constraint firstItem="e5s-TU-f5A" firstAttribute="leading" secondItem="TR1-oS-IKa" secondAttribute="leadingMargin" id="mNX-d1-uZQ"/>
                             <constraint firstItem="Utj-Ou-qvE" firstAttribute="top" secondItem="JSI-GJ-vb7" secondAttribute="top" constant="120" id="ueq-9T-Mdt"/>
@@ -863,47 +878,47 @@
             </objects>
             <point key="canvasLocation" x="771.01449275362324" y="-546.42857142857144"/>
         </scene>
-        <!--View Controller-->
+        <!--Adding Pill View Controller-->
         <scene sceneID="Kpf-Ow-PhL">
             <objects>
-                <viewController id="H08-GP-zQU" sceneMemberID="viewController">
+                <viewController id="H08-GP-zQU" customClass="AddingPillViewController" customModule="Bitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dbh-xq-N83">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="약 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTo-Is-bIV">
-                                <rect key="frame" x="50" y="144" width="314" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="50" y="144" width="314" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="약의 이름을 입력하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EVd-Eq-9Hr">
-                                <rect key="frame" x="50" y="174.5" width="314" height="34"/>
+                                <rect key="frame" x="50" y="179.5" width="314" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="약 정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ps-YQ-YLa">
-                                <rect key="frame" x="50" y="238.5" width="314" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="50" y="243.5" width="314" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="약 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SI2-vn-VhF">
-                                <rect key="frame" x="50" y="333.5" width="314" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="약 먹을 시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SI2-vn-VhF">
+                                <rect key="frame" x="50" y="343" width="314" height="26"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="약의 정보를 입력하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BN9-t6-v2d">
-                                <rect key="frame" x="50" y="269.5" width="314" height="34"/>
+                                <rect key="frame" x="50" y="279" width="314" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="UqZ-m9-l2S">
-                                <rect key="frame" x="0.0" y="359" width="314" height="216"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="UqZ-m9-l2S">
+                                <rect key="frame" x="0.0" y="374" width="314" height="216"/>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6D-Wu-oas">
-                                <rect key="frame" x="150" y="731" width="114" height="31"/>
+                                <rect key="frame" x="150" y="702" width="114" height="31"/>
                                 <color key="backgroundColor" red="0.41176470590000003" green="0.43921568630000002" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -914,6 +929,9 @@
                                         <integer key="value" value="17"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tapAddButton:" destination="H08-GP-zQU" eventType="touchUpInside" id="vDr-UV-qQM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hg8-pq-Zi6"/>
@@ -942,6 +960,12 @@
                             <constraint firstItem="BN9-t6-v2d" firstAttribute="top" secondItem="0ps-YQ-YLa" secondAttribute="bottom" constant="10" id="xas-UF-nIp"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="0aV-hz-pbg"/>
+                    <connections>
+                        <outlet property="pillInfoTextField" destination="BN9-t6-v2d" id="fJI-xP-pJx"/>
+                        <outlet property="pillNameTextField" destination="EVd-Eq-9Hr" id="rfx-1X-DBg"/>
+                        <outlet property="pillTimeDatePicker" destination="UqZ-m9-l2S" id="KHl-Mk-RG8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0X-El-krs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

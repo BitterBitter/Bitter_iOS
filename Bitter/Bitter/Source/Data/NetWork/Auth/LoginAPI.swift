@@ -16,7 +16,7 @@ extension SignInViewController {
             debugPrint("😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆😆")
             guard let status = data?.status else { return }
             
-            let storyboard = UIStoryboard(name: "main", bundle: nil)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
             guard let vc = storyboard.instantiateViewController(withIdentifier: "tab") as? MainTabBarVC else { return }
             UIApplication.shared.keyWindow?.replaceRootViewController(vc, animated: true, completion: nil)
             

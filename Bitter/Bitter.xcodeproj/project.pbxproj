@@ -15,6 +15,8 @@
 		EF4023452886347100F75D96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4023442886347100F75D96 /* Assets.xcassets */; };
 		EF4023482886347100F75D96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4023462886347100F75D96 /* LaunchScreen.storyboard */; };
 		EF62565F28876ADC00BB2BF8 /* RestoreIntoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF62565E28876ADC00BB2BF8 /* RestoreIntoViewController.swift */; };
+		EF6256612887757300BB2BF8 /* AddingPillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6256602887757300BB2BF8 /* AddingPillViewController.swift */; };
+		EF625663288778AC00BB2BF8 /* MyPillDbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF625662288778AC00BB2BF8 /* MyPillDbManager.swift */; };
 		EF7C80642886389C0031330A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C80632886389C0031330A /* MainViewController.swift */; };
 		EF7C8067288639A90031330A /* baseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C8066288639A90031330A /* baseVC.swift */; };
 		EF9928B1288682C7008D7EE2 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9928B0288682C7008D7EE2 /* SignUpModel.swift */; };
@@ -49,6 +51,8 @@
 		EF4023472886347100F75D96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF4023492886347100F75D96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF62565E28876ADC00BB2BF8 /* RestoreIntoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreIntoViewController.swift; sourceTree = "<group>"; };
+		EF6256602887757300BB2BF8 /* AddingPillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddingPillViewController.swift; path = Bitter/Source/Presentation/View/Main/main/AddingPillViewController.swift; sourceTree = SOURCE_ROOT; };
+		EF625662288778AC00BB2BF8 /* MyPillDbManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPillDbManager.swift; sourceTree = "<group>"; };
 		EF7C80632886389C0031330A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EF7C8066288639A90031330A /* baseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseVC.swift; sourceTree = "<group>"; };
 		EF9928B0288682C7008D7EE2 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
@@ -208,6 +212,7 @@
 			children = (
 				EF9928B7288694F5008D7EE2 /* view */,
 				EF7C80632886389C0031330A /* MainViewController.swift */,
+				EF6256602887757300BB2BF8 /* AddingPillViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				EF9928C62887010F008D7EE2 /* MemberDbManager.swift */,
+				EF625662288778AC00BB2BF8 /* MyPillDbManager.swift */,
 			);
 			path = DbManager;
 			sourceTree = "<group>";
@@ -460,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF9928BE28869934008D7EE2 /* MainTabBar.swift in Sources */,
+				EF6256612887757300BB2BF8 /* AddingPillViewController.swift in Sources */,
 				EF9928C028869AAF008D7EE2 /* Constants.swift in Sources */,
 				EF7C8067288639A90031330A /* baseVC.swift in Sources */,
 				EFD1CE0028867AD5006AFEA3 /* LoginAPI.swift in Sources */,
@@ -474,6 +481,7 @@
 				EF62565F28876ADC00BB2BF8 /* RestoreIntoViewController.swift in Sources */,
 				EF40233E2886347000F75D96 /* SceneDelegate.swift in Sources */,
 				EF9928C928870457008D7EE2 /* MemberModel.swift in Sources */,
+				EF625663288778AC00BB2BF8 /* MyPillDbManager.swift in Sources */,
 				EFD1CDFE28867A5C006AFEA3 /* APImanager.swift in Sources */,
 				EF9928B52886909E008D7EE2 /* MainTableViewCell.swift in Sources */,
 				EF9928BB2886952B008D7EE2 /* MenuViewController.swift in Sources */,

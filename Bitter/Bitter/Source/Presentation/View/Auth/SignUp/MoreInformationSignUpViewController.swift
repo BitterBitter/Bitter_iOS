@@ -33,13 +33,13 @@ final class MoreInformationSignUpViewController: baseVC {
         let height = heightTextField.text!
         let weight = weightTextField.text!
         
-        let memberDbManager = MemberDbManager()
+        let memberDbManager = MemberDbManager() 
         memberDbManager.addMemberInfo(username: username!, password: password!, name: name, age: age, gender: gender, height: height, weight: weight)
         
-//        morSignupNetworking()
+        morSignupNetworking()
         
-        let vc = storyboard?.instantiateViewController(withIdentifier: "signin") as? SignInViewController
-        self.navigationController?.pushViewController(vc ?? SignInViewController(), animated: true)
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "signin") as? SignInViewController
+//        self.navigationController?.pushViewController(vc ?? SignInViewController(), animated: true)
     }
     
     
