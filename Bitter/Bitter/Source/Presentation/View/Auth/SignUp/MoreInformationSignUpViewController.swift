@@ -38,8 +38,8 @@ final class MoreInformationSignUpViewController: baseVC {
         
         morSignupNetworking()
         
-//        let vc = storyboard?.instantiateViewController(withIdentifier: "signin") as? SignInViewController
-//        self.navigationController?.pushViewController(vc ?? SignInViewController(), animated: true)
+        let vc = storyboard?.instantiateViewController(withIdentifier: "signin") as? SignInViewController
+        self.navigationController?.pushViewController(vc ?? SignInViewController(), animated: true)
     }
     
     

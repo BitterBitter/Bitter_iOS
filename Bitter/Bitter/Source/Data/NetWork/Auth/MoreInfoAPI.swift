@@ -20,6 +20,9 @@ extension MoreInformationSignUpViewController {
             guard let status = data?.status else { return }
             
             print(data?.status)
+            
+            self.navigationController?.popToRootViewController(animated: true)
+            
         }
         APImanager.doRequest("\(Constants.SERVER_IP)auth/signup", method: .post, parameters: param, completion: completion)
     }
