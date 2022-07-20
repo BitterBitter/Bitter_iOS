@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 13" translatesAutoresizingMaskIntoConstraints="NO" id="l84-H3-Tm0">
-                                <rect key="frame" x="46" y="138" width="94" height="123"/>
+                                <rect key="frame" x="46" y="168" width="94" height="93"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="94" id="LgI-Qf-O2Y"/>
                                 </constraints>
@@ -29,7 +29,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="홍길동" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KB1-fi-NJ8">
-                                <rect key="frame" x="176" y="183.5" width="71" height="32"/>
+                                <rect key="frame" x="176" y="198.5" width="71" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="n29-TM-dkv"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="71" id="sGm-ny-Wqv"/>
@@ -39,7 +39,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjJ-oi-s81">
-                                <rect key="frame" x="349" y="192.5" width="24" height="14"/>
+                                <rect key="frame" x="349" y="207.5" width="24" height="14"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                             </button>
@@ -159,7 +159,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="l84-H3-Tm0" secondAttribute="bottom" constant="552" id="cJY-1v-AYy"/>
                             <constraint firstItem="KSk-Hx-r37" firstAttribute="trailing" secondItem="PCh-1f-A6B" secondAttribute="trailing" id="cY2-gZ-8Ao"/>
                             <constraint firstItem="KSk-Hx-r37" firstAttribute="trailing" secondItem="sap-5n-8ej" secondAttribute="trailing" id="dhX-7e-Ovh"/>
-                            <constraint firstItem="l84-H3-Tm0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="hWK-JN-zbm"/>
+                            <constraint firstItem="l84-H3-Tm0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="hWK-JN-zbm"/>
                             <constraint firstItem="KB1-fi-NJ8" firstAttribute="centerY" secondItem="HjJ-oi-s81" secondAttribute="centerY" id="ijw-I6-XG1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7fM-qQ-72D" secondAttribute="trailing" constant="363" id="jgF-vL-HWP"/>
                             <constraint firstItem="PCh-1f-A6B" firstAttribute="top" secondItem="KSk-Hx-r37" secondAttribute="bottom" constant="18" id="lm9-YU-zyc"/>
@@ -1028,8 +1028,8 @@
         <image name="Logout" width="34" height="34"/>
         <image name="bell" width="31" height="31"/>
         <image name="help" width="29" height="29"/>
-        <image name="house.fill" catalog="system" width="32" height="32"/>
-        <image name="list.dash" catalog="system" width="32" height="32"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="settings" width="31" height="31"/>
         <image name="title" width="201" height="56"/>
         <image name="title (1)" width="239" height="72"/>
